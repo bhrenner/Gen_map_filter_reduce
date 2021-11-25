@@ -3,6 +3,7 @@ from datetime import datetime
 def faz_dicio(arq):
     dicio = {}
     for i, cont in enumerate(arq):
+        """Agrega cada indice da lista de strings a uma chave de dicionário"""
         if i == 0:
             dicio['Data'] = datetime.strptime(cont, '%d/%m/%Y').date()
         if i == 1:
